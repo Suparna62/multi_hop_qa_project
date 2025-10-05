@@ -44,8 +44,11 @@ flowchart TD
 - Columns: `Question`, `Q1`, `Q2`, `Answer`
 
 QUESTION: What is the capital of the birthplace of Rumi?
+
 Q1: What is the birthplace (country only) of Rumi?
+
 Q2: What is the capital of #1?
+
 Answer: ['Afghanistan']
 
 ---
