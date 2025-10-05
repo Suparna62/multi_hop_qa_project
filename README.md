@@ -13,10 +13,10 @@ The project follows a **multi-hop reasoning pipeline**:
 ```mermaid
 flowchart TD
     A[Complex Question] --> B[Question Decomposer]
-    B --> C1[Sub-Question1]
-    B --> C2[Sub-Question2]
-    C1 --> D1[Retrieve Context (Wikipedia / DuckDuckGo)]
-    C2 --> D2[Retrieve Context (Wikipedia / DuckDuckGo)]
+    B --> C1[Sub-Question 1]
+    B --> C2[Sub-Question 2]
+    C1 --> D1[Retrieve Context - Wikipedia / DuckDuckGo]
+    C2 --> D2[Retrieve Context - Wikipedia / DuckDuckGo]
     D1 --> E1[QA Reader for each sub-question]
     D2 --> E2[QA Reader for each sub-question]
     E1 --> F[Synthesized Final Answer]
