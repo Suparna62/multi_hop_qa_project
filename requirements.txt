@@ -1,0 +1,12 @@
+
+transformers>=4.30.0
+datasets
+torch
+accelerate
+sentencepiece
+duckduckgo_search
+beautifulsoup4
+requests
+wikipedia   # optional, useful for entity canonicalization
+rouge-score
+nltk
