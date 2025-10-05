@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What is the capital of the birthplace of Rumi?",
+    "q1": "What is the birthplace (country only) of Rumi?",
+    "q2": "What is the capital of #1?",
+    "answer": "['Afghanistan']"
+  },
+  {
+    "question": "What is the capital of the birthplace of Ahmad Shah Massoud?",
+    "q1": "What is the birthplace (country only) of Ahmad Shah Massoud?",
+    "q2": "What is the capital of #1?",
+    "answer": "['Afghanistan']"
+  },
+  {
+    "question": "What is the capital of the birthplace of Mahmud of Ghazni?",
+    "q1": "What is the birthplace (country only) of Mahmud of Ghazni?",
+    "q2": "What is the capital of #1?",
+    "answer": "['Afghanistan']"
+  },
+  {
+    "question": "What is the capital of the birthplace of Ahmad Shah Durrani?",
+    "q1": "What is the birthplace (country only) of Ahmad Shah Durrani?",
+    "q2": "What is the capital of #1?",
+    "answer": "['Afghanistan']"
+  },
+  {
+    "question": "What is the capital of the birthplace of Annet Mahendru?",
+    "q1": "What is the birthplace (country only) of Annet Mahendru?",
+    "q2": "What is the capital of #1?",
+    "answer": "['Afghanistan']"
+  },
+  {
+    "question": "What is the capital of the birthplace of Skanderbeg?",
+    "q1": "What is the birthplace (country only) of Skanderbeg?",
+    "q2": "What is the capital of #1?",
+    "answer": "['Albania']"
+  },
+  {
+    "question": "What is the capital of the birthplace of Enver Hoxha?",
+    "q1": "What is the birthplace (country only) of Enver Hoxha?",
+    "q2": "What is the capital of #1?",
+    "answer": "['Albania']"
+  },
+  {
+    "question": "What is the capital of the birthplace of Sofia Boutella?",
+    "q1": "What is the birthplace (country only) of Sofia Boutella?",
+    "q2": "What is the capital of #1?",
+    "answer": "['Algeria']"
+  },
+  {
+    "question": "What is the capital of the birthplace of Jacques Derrida?",
+    "q1": "What is the birthplace (country only) of Jacques Derrida?",
+    "q2": "What is the capital of #1?",
+    "answer": "['Algeria']"
+  },
+  {
+    "question": "What is the capital of the birthplace of Riyad Mahrez?",
+    "q1": "What is the birthplace (country only) of Riyad Mahrez?",
+    "q2": "What is the capital of #1?",
+    "answer": "['France']"
+  }
+]
