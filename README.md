@@ -61,7 +61,7 @@ git clone https://github.com/Suparna62/multi_hop_qa_project.git
 cd multi_hop_qa_project
 ```
 
-3. Create a virtual environment and install dependencies:
+2. Create a virtual environment and install dependencies:
 ```
 python -m venv venv
 source venv/bin/activate       # or venv\Scripts\activate on Windows
