@@ -10,23 +10,18 @@ The **Multi-Hop QA Project** is a system designed to answer complex questions th
 
 The project follows a **multi-hop reasoning pipeline**:
 
-Complex Question
-        │
-        ▼
-  Question Decomposer
-        │
-  ┌─────┴─────┐
-  │           │
-Sub-Question1 Sub-Question2
-  │           │
-  ▼           ▼
-Retrieve Context (Wikipedia / DuckDuckGo)
-  │           │
-  ▼           ▼
-   QA Reader for each sub-question
-        │
-        ▼
-  Synthesized Final Answer
+```mermaid
+flowchart TD
+    A[Complex Question] --> B[Question Decomposer]
+    B --> C1[Sub-Question1]
+    B --> C2[Sub-Question2]
+    C1 --> D1[Retrieve Context (Wikipedia / DuckDuckGo)]
+    C2 --> D2[Retrieve Context (Wikipedia / DuckDuckGo)]
+    D1 --> E1[QA Reader for each sub-question]
+    D2 --> E2[QA Reader for each sub-question]
+    E1 --> F[Synthesized Final Answer]
+    E2 --> F
+```
 
 **Step-by-step process**:  
 1. **Decomposition**: Split a complex question into simpler sub-questions.  
@@ -46,7 +41,12 @@ Retrieve Context (Wikipedia / DuckDuckGo)
 - `requirements.txt` — Python dependencies.  
 
 **Dataset format (`cc.tsv`)**:  
-- Columns: `question`, `q1`, `q2`, `answer`  
+- Columns: `Question`, `Q1`, `Q2`, `Answer`
+
+QUESTION: What is the capital of the birthplace of Rumi?
+Q1: What is the birthplace (country only) of Rumi?
+Q2: What is the capital of #1?
+Answer: ['Afghanistan']
 
 ---
 
@@ -78,6 +78,3 @@ python run_demo.py --dataset dataset/cc.tsv --n 10
 5. Evaluate Model
 ```
 python evaluate.py --dataset dataset/cc.tsv --model decomposer_t5 --n 10
-
-
-
