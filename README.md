@@ -72,7 +72,7 @@ pip install -r requirements.txt
 
 1. Train Decomposer (optional, requires GPU for speed)
 ```
-   python train_decomposer.py --train-file cc.tsv --output_dir decomposer_t5
+python train_decomposer.py --train-file cc.tsv --output_dir decomposer_t5
 ```
 3. Run Demo (end-to-end, uses web search)
 ```
