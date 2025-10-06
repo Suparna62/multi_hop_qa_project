@@ -70,14 +70,15 @@ pip install -r requirements.txt
 
 ## Usage
 
-1. Train Decomposer (optional, requires GPU for speed)
-```
-python train_decomposer.py --train-file cc.tsv --output_dir decomposer_t5
-```
-3. Run Demo (end-to-end, uses web search)
+1. Run Demo 
 ```
 python run_demo.py --dataset dataset/cc.tsv --n 10
 ```
-5. Evaluate Model
+2. Evaluate Model
 ```
 python evaluate.py --dataset dataset/cc.tsv --model decomposer_t5 --n 10
+```
+3. Train Decomposer 
+```
+python train_decomposer.py --train-file cc.tsv --output_dir decomposer_t5
+```
