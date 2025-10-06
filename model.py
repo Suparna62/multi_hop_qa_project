@@ -2,7 +2,6 @@
 def load_model(model_name="deepset/roberta-base-squad2"):
     try:
         from transformers import pipeline
-        # device=-1 ensures CPU; set device=0 for GPU
         qa = pipeline("question-answering", model=model_name, device=-1)
         print(f"Loaded QA model: {model_name}")
         return qa
@@ -32,6 +31,6 @@ def decompose_question(question: str):
             q1 = f"Where was {subject} born?"
             q2 = "What is the capital of " + parts[-1].strip().rstrip("?") + "?"
             return q1, q2
-        # Default: return original as q1 and empty q2
         return q, ""
+
 
