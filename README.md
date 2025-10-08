@@ -74,6 +74,10 @@ pip install -r requirements.txt
 ```
 python run_demo.py --dataset dataset/cc.tsv --n 10
 ```
+or
+```
+python run_demo.py --dataset dataset/cc.tsv --question "Ask a custom question (overrides dataset mode)"
+```
 2. Evaluate Model
 ```
 python evaluate.py --dataset dataset/cc.tsv --model decomposer_t5 --n 10
